@@ -142,12 +142,9 @@ class CustomAppBar extends StatelessWidget {
         CustomContainer(
           width: 45,
           height: 45,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(16),
-            child: Image.network(
-              'https://i.imgur.com/uTjWuc8.jpg',
-              fit: BoxFit.cover,
-            ),
+          child: CircleAvatar(
+            backgroundImage: NetworkImage("https://i.imgur.com/uTjWuc8.jpg"),
+            radius: 100,
           ),
         )
       ],
